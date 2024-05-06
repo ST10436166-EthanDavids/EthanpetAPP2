@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#570404"
+    android:backgroundTint="#EA2222"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/Image1"
+        android:layout_width="404dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pet_image" />
+
+    <Button
+        android:id="@+id/cleanBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="196dp"
+        android:text="Clean"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image1" />
+
+    <Button
+        android:id="@+id/feedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="55dp"
+        android:text="Feed"
+        app:layout_constraintEnd_toStartOf="@+id/playBtn"
+        app:layout_constraintTop_toBottomOf="@+id/Image1" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="19dp"
+        android:text="Play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image1" />
+
+    <TextView
+        android:id="@+id/cleanCounter"
+        android:layout_width="72dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="132dp"
+        android:textColor="#ECE4E4"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cleanBtn" />
+
+    <TextView
+        android:id="@+id/feedCounter"
+        android:layout_width="88dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="82dp"
+        android:textColor="#F1EAEA"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/playCounter"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/cleanCounter"
+        app:layout_constraintTop_toBottomOf="@+id/feedBtn"
+        app:layout_constraintVertical_bias="0.871" />
+
+    <TextView
+        android:id="@+id/playCounter"
+        android:layout_width="78dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="#F6F0F0"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
